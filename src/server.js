@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 // Endpoint de consultas lógicas
 app.post('/query', async (req, res) => {
-    console.log("Consulta recibida:", req.body);
+  console.log("Consulta recibida:", req.body);
   const { query } = req.body;
 
   try {
