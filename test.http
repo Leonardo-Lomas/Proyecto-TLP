@@ -1,0 +1,31 @@
+### Contrato con penalidad
+POST http://localhost:3000/query
+Content-Type: application/json
+
+{
+  "query": "penalty_applicable(contract1)."
+}
+
+### Contrato válido
+POST http://localhost:3000/query
+Content-Type: application/json
+
+{
+  "query": "valid_contract(contract2)."
+}
+
+### Cliente válido
+POST http://localhost:3000/query
+Content-Type: application/json
+
+{
+  "query": "valid_client(bob)."
+}
+
+### Cliente penalizado
+POST http://localhost:3000/query
+Content-Type: application/json
+
+{
+  "query": "penalized_client(alice)."
+}
